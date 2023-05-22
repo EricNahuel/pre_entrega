@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Explora&family=Lato:ital,wght@1,100&family=Lora:wght@600&display=swap');
 
 
 *{
     padding: 0%;
 }
 body{
-    background-color:  #0c0b0c83;
+    background-color:  #f8f7f883;
     text-align:center
     font-family: sans-serif;
 }
@@ -34,40 +38,49 @@ body{
 }
 .head{
     display: flex;
-    border: solid rgba(0, 0, 0, 0.219); 
+    flex-direction: wrap;
+    border: solid rgba(158, 107, 107, 0.219); 
     border-width: 3px;
     align-content: center;
     justify-content: space-between;
     height: 100%;
-    background-color: #a08b90;
+    background-color:#a08b90;
     width: 100%;
     z-index: 100%;
 }
+.nav-link{
+    
+}
+
 .navbar{    
     margin-right: 10px;
     display: flex;
     flex-direction: row;
-    align-items: stretch;
+    justify-content: center;
+    align-items: center;
+    
     
 }
 .logo5{
     width: 75px ;
+    border-radius: 50%;
+    
 
 }
-/*.logo a {
 
-    text-decoration: none;
-    color: antiquewhite;
-    text-transform: uppercase;
-    font-size: 20px;
-}*/
 
-.navbar a {
+.navbar a{
+    display: flex;
+    flex-direction: wrap;
     padding: 15px 15px;
-    color: aliceblue;
+    color: rgb(12, 12, 12);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 20px;
+    font-family: 'Explora', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Lora', serif;
+    font-weight: 100;
 }
 
 .navbar a:hover{
@@ -76,17 +89,22 @@ body{
 
 
 .titulo {
+    display: flex;
+    justify-content: center;
     margin-bottom:40px;
     font-size: 40px;
     font-weight: 600;
     text-transform: uppercase
-    
 
+}
+.prueba_tittle{
+    font-family: 'Lato', sans-serif;
 }
 
 .p {
     margin-bottom: 40px;
     font-size: 18px;
+    
 
 }
 
@@ -121,10 +139,14 @@ body{
     flex-direction: column;
     justify-content: space-between;
     height: auto;
+    font-family: 'Explora', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Lora', serif;
+    font-weight: 100;
 }   
 
 .contenido{
-    background-color:  #ddbfc6;
+    background-color:  #fffcfd;
     text-decoration: none;
     flex-direction: column;
     font-size: 50%;
@@ -185,10 +207,14 @@ body{
 }
 .titulo{
     background-color: #a08b9096;
-    padding: 35px 45px;
-    color: #faebd7;
+    padding: 5px 5px;
+    color: #030303;
     text-decoration: none;
+    font-family: 'Explora', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Lora', serif;;
     text-transform: uppercase
+    
 
 }
 
@@ -213,6 +239,7 @@ body{
 
 .slide{
     width: 1000px;
+    height: auto;
     margin: auto;
     padding: 0%;
     
@@ -232,18 +259,95 @@ body{
 /*media queris*/
 
 
+
+#page-container {
+    min-height: 100%;
+    position: relative;
+}
+
+.content-wrap {
+    padding-bottom: 60px; /* altura de footer */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #fdfafa;
+    margin: 0 auto 20px;
+    padding: 10px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links li {
+    margin-right: 10px;
+}
+
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-social {
+    margin-bottom: 20px;
+}
+
+.footer-social a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    
+    color: #333;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+.fa-facebook-b{ width: 40px;
+    height: 40px;
+    border: 50%;
+
+}
+.img_footer{
+    width: 40px;
+    height: 40px;
+    border: 50%;
+}
+    /* Agrega la clase .carousel-image a las imágenes del carrusel */
+
+    .cuerpo {
+        padding-top: 80px;}
+    
+    .w-100 {
+        width: 100%!important;
+        height: 600px!important;}
 /*desktop*/
 @media screen and (max-width: 1400px){
-    body{
-        background-color: blue
-    }
     
 }
 /*tablet*/
 @media screen and (max-width: 780px){
-    body{
-        background-color: rgb(255, 0, 55)}
-        .head{
+        
+        
+        head{
             display: flex;
             flex-direction: column;
         }
@@ -255,17 +359,62 @@ body{
             margin: auto;}
         .navbar a {
                 padding: 2px 15px;
-                color: aliceblue;
+                color: rgb(18, 18, 19);
                 text-decoration: none;
                 text-transform: uppercase;
-                font-size: 15px;
+                font-size: 15px;}
             
-}
+        .nav-pills{
+            margin-right: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: auto;}
+        .titulo{
+            font-size: 16px;
+        }
+        .carrousel{
+                display: inline-block;
+                padding: 100%;
+            } 
+        footer{
+                background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: none;
+            bottom: 0;
+            width: 100%;
+            margin-bottom: -200px;
+            }
+            .contenido__nosotros{
+                font-size: 15px;
+            }
+            .slide{
+                width: auto;
+            }
+            .w-100 {
+                width: 100%!important;
+                height: 450px!important;}
+        }
 /*mobile*/
 @media screen and (max-width: 480px){
-    body{
-        background-color: rgb(51, 255, 0)
+    #page-container {
+        padding-bottom: 100px;
+        margin-bottom: -100px;
     }
     
+    footer {
+        position: relative;
+        z-index: 1;
+    }      
+    .contenido__nosotros{
+        font-size: 12px;
+    }
+    .slide{
+        width: auto;
+    }
+    .w-100 {
+        width: 100%!important;
+        height: 300px!important;}
 }
-

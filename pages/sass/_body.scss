@@ -1,0 +1,27 @@
+
+*{
+    padding: 0%;
+}
+body{
+    background-color:  #f8f7f883;
+    text-align:center;
+    font-family: sans-serif;
+}
+.header{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+
+}
+.head{
+    display: flex;
+    flex-direction: wrap;
+    border: solid rgba(158, 107, 107, 0.219); 
+    border-width: 3px;
+    align-content: center;
+    justify-content: space-between;
+    height: 100%;
+    background-color:#a08b90;
+    width: 100%;
+    z-index: 100%;
+}

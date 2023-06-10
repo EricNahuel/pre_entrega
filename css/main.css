@@ -21,27 +21,6 @@ body {
           align-items: center;
 }
 
-.head {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: wrap;
-          flex-direction: wrap;
-  border: solid rgba(158, 107, 107, 0.219);
-  border-width: 3px;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 100%;
-  background-color: #a08b90;
-  width: 100%;
-  z-index: 100%;
-}
-
 .navbar {
   margin-right: 10px;
   display: -webkit-box;
@@ -59,6 +38,33 @@ body {
           align-items: center;
 }
 
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: wrap;
+          flex-direction: wrap;
+  border: solid rgba(158, 107, 107, 0.219);
+  border-width: 3px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  background-color: #111010;
+  width: 100%;
+  z-index: 100%;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .logo5 {
   width: 75px;
   border-radius: 50%;
@@ -73,7 +79,7 @@ body {
       -ms-flex-direction: wrap;
           flex-direction: wrap;
   padding: 15px 15px;
-  color: rgb(12, 12, 12);
+  color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 20px;
@@ -85,55 +91,6 @@ body {
 
 .navbar a:hover {
   background-color: black;
-}
-
-.titulo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 40px;
-  font-size: 40px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.prueba_tittle {
-  font-family: "Lato", sans-serif;
-}
-
-.p {
-  margin-bottom: 40px;
-  font-size: 18px;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 40px;
-  border: 2px solid rgb(16, 13, 19);
-  color: aliceblue;
-  text-decoration: none;
-  background-color: rgb(15, 14, 15);
-}
-
-.content__sau {
-  height: 60vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .contacto {
@@ -157,7 +114,45 @@ body {
   font-family: "Lora", serif;
   font-weight: 100;
 }
+.contacto .titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.contacto .titulo_ubicacion {
+  background-color: rgba(160, 139, 144, 0.5882352941);
+  padding: 5px 5px;
+  color: #030303;
+  text-decoration: none;
+  font-family: "Explora", cursive;
+  font-family: "Lato", sans-serif;
+  font-family: "Lora", serif;
+  text-transform: uppercase;
+}
 
+/*.prueba_tittle {
+    font-family: 'Lato', sans-serif;
+}*/
+.p {
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+/*
+.content__sau {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}*/
 .contenido {
   background-color: #fffcfd;
   text-decoration: none;
@@ -167,12 +162,7 @@ body {
           flex-direction: column;
   font-size: 50%;
 }
-
-.cuerpo {
-  background-color: #d3b6bd;
-}
-
-.contenido__nosotros {
+.contenido .contenido__nosotros {
   background-color: #a08b90;
   height: 40px;
   padding: 300px 40px;
@@ -193,17 +183,12 @@ body {
   font-size: 20px;
 }
 
-.content__header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 55px;
-  padding: 1000;
-}
-
+/*.content__header {
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+    padding: 1000
+}*/
 .card {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -213,6 +198,7 @@ body {
           align-items: center;
   background-color: rgba(224, 202, 202, 0.4862745098);
   display: inline-block;
+  margin: 15px;
 }
 
 .card a {
@@ -240,60 +226,29 @@ body {
   text-transform: uppercase;
 }
 
-.titulo {
-  background-color: rgba(160, 139, 144, 0.5882352941);
-  padding: 5px 5px;
-  color: #030303;
-  text-decoration: none;
-  font-family: "Explora", cursive;
-  font-family: "Lato", sans-serif;
-  font-family: "Lora", serif;
-  text-transform: uppercase;
+/*.content__header2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
 }
 
-.content__header2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 5px;
-}
 
 .imagen2 {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 300px;
-  height: 300px;
-  margin: 1 30px;
-  border-radius: 20px;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    margin: 1 30px;
+    border-radius: 20px;
 }
-
+*/
 /*---------------------------------------------------carousel bootstrap----------------------------------------------------------------------*/
 .slide {
-  width: 1000px;
+  width: auto;
   height: auto;
   margin: auto;
   padding: 0%;
 }
-
-.display-1 {
-  color: rgb(233, 232, 232);
-  -webkit-text-stroke: 2px rgba(54, 51, 51, 0.301);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.d-item {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-carousel-indicators {
+.slide .carousel-indicators {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   -webkit-box-flex: 0;
@@ -315,39 +270,29 @@ carousel-indicators {
   -webkit-transition: opacity 0.6s ease;
   transition: opacity 0.6s ease;
 }
-
-/* ----------------------------------------- las imágenes del carrusel -----------------------------------------------------------------------*/
-.cuerpo {
-  padding-top: 80px;
-}
-
-.w-100 {
+.slide .w-100 {
   width: 100% !important;
   height: 600px !important;
 }
-
-.carousel-inner {
-  margin-top: 100px;
+.slide .display-1 {
+  color: rgb(233, 232, 232);
+  -webkit-text-stroke: 2px rgba(54, 51, 51, 0.301);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.slide .btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 40px;
+  border: 2px solid rgb(16, 13, 19);
+  color: aliceblue;
+  text-decoration: none;
+  background-color: rgb(15, 14, 15);
 }
 
-.row {
-  margin-top: 100px;
-}
-
-.card-container {
-  background-image: url("");
-  background-color: #565658;
-  background-size: cover;
-  background-position: center;
-  padding: 40px;
-}
-
-.conoces {
-  padding: 10rem;
-}
-
-/*------------------------------------------------------barra de informacion---------------------------------------------------------------------------------------*/
-.container {
+/*------------------------------------------------------barra de icons---------------------------------------------------------------------------------------*/
+.container_card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -356,21 +301,8 @@ carousel-indicators {
           justify-content: center;
   -ms-flex-wrap: row;
       flex-wrap: row;
-  margin-top: 50px;
-}
-
-.product1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin: auto;
+  margin: 4px;
+  margin-left: 1.875rem;
 }
 
 .image-container {
@@ -405,9 +337,36 @@ carousel-indicators {
   color: green;
 }
 
+.product1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 1.875rem;
+}
+
 .producto64 {
   width: 40px;
   height: 40px;
+}
+
+/*------------------------------------------------------barra de tarjetas---------------------------------------------------------------------------------------*/
+.card-container {
+  background-image: url("");
+  background-color: rgba(50, 64, 93, 0.93);
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+}
+
+.conoces {
+  padding: 5rem;
 }
 
 #page-container {
@@ -415,17 +374,14 @@ carousel-indicators {
   position: relative;
 }
 
-.content-wrap {
-  padding-bottom: 60px; /* altura de footer */
-}
-
 footer {
-  background-color: #333;
+  background-color: #000000;
   color: #fff;
   padding: 20px;
   text-align: center;
   bottom: 0;
   width: 100%;
+  margin-top: 100px;
 }
 
 .footer-logo {
@@ -529,7 +485,7 @@ footer {
   }
   .navbar a {
     padding: 2px 15px;
-    color: rgb(18, 18, 19);
+    color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 15px;
@@ -576,10 +532,11 @@ footer {
     height: 450px !important;
   }
   /*prueba de las cards*/
-  .container {
+  .container_card {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    margin-left: 0px;
   }
   .product1 {
     /* Ajusta el ancho máximo según tus necesidades */
@@ -614,6 +571,10 @@ footer {
   .logo5 {
     width: 45px;
   }
+  .slide .w-100 {
+    width: 100% !important;
+    height: auto !important;
+  }
 }
 /*mobile*/
 @media screen and (max-width: 480px) {
@@ -634,5 +595,12 @@ footer {
   .w-100 {
     width: 100% !important;
     height: 300px !important;
+  }
+  .producto64 {
+    width: 28px;
+    height: 26px;
+  }
+  .product1 {
+    margin: 0;
   }
 }

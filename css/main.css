@@ -369,13 +369,18 @@ body {
   padding: 5rem;
 }
 
+.card-img-top {
+  width: 17vh;
+  height: 18vh;
+}
+
 #page-container {
   min-height: 100%;
   position: relative;
 }
 
 footer {
-  background-color: #000000;
+  background-color: #111010;
   color: #fff;
   padding: 20px;
   text-align: center;
